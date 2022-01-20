@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ForgotpwComponent } from './forgotpw/forgotpw.component';
 import { HomeComponent } from './home/home.component';
+import { KalendarComponent } from './kalendar/kalendar.component';
 import { LoginComponent } from './login/login.component';
 import { NilaiComponent } from './nilai/nilai.component';
 import { ProfilComponent } from './profil/profil.component';
@@ -32,6 +33,10 @@ const routes: Routes = [
     path: 'profil',
     component: ProfilComponent,
   },
+  {
+    path: 'kalendar',
+    component: KalendarComponent
+  }
 ];
 
 @NgModule({
