@@ -1,14 +1,14 @@
 <div class="content-wrapper">
   <section id="profilsiswa">
     <div class="container-fluid">
-      <button
+      <!-- <button
         #addButton
         ejs-button
         id="addButton"
         type="button"
         content="Add"
         (click)="onButtonClick()"
-      ></button>
+      >Add button</button>
 
       <ejs-schedule
         #scheduleObj
@@ -17,7 +17,8 @@
         [eventSettings]="eventSettings"
         [views]="scheduleViews"
       >
-      </ejs-schedule>
+      </ejs-schedule> -->
+      <full-calendar [options]="calendarOptions"></full-calendar>
     </div>
   </section>
 </div>
