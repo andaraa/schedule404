@@ -15,8 +15,8 @@ import { FooterComponent } from './footer/footer.component';
 import { CalendarComponent } from './home/sidebar/calendar/calendar.component';
 import { ProfilComponent } from './profil/profil.component';
 import { AppComponent } from './app.component';
-import { ScheduleComponentModule } from './schedule/schedule.module';
 import { ScheduleAllModule } from '@syncfusion/ej2-angular-schedule';
+import { KalendarModule } from './kalendar/kalendar.module';
 // import {
 //   DayService,
 //   MonthAgendaService,
@@ -46,8 +46,8 @@ import { ScheduleAllModule } from '@syncfusion/ej2-angular-schedule';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ScheduleComponentModule,
     ScheduleAllModule,
+    KalendarModule,
     // RecurrenceEditorModule,
     // FontAwesomeModule,
     // ScheduleModule,

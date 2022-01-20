@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import {
   faEdit,
   faEraser,
@@ -13,28 +13,11 @@ import {
 } from '@syncfusion/ej2-angular-schedule';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './schedule.component.html',
-  // template: `<button
-  //     #addButton
-  //     ejs-button
-  //     id="addButton"
-  //     type="button"
-  //     content="Add"
-  //     (click)="onButtonClick()"
-  //   ></button>
-  //   <ejs-schedule
-  //     #scheduleObj
-  //     width="100%"
-  //     height="520px"
-  //     [selectedDate]="selectedDate"
-  //     [eventSettings]="eventSettings"
-  //     [views]="scheduleViews"
-  //   ></ejs-schedule>`,
-
-  // styleUrls: ['./app.component.css'],
+  selector: 'app-kalendar',
+  templateUrl: './kalendar.component.html',
+  styleUrls: ['./kalendar.component.css'],
 })
-export class AppComponent {
+export class KalendarComponent implements OnInit {
   @ViewChild('scheduleObj')
   public scheduleObj?: ScheduleComponent;
   @ViewChild('addButton')
@@ -59,6 +42,9 @@ export class AppComponent {
       },
     ],
   };
+
+  ngOnInit(): void {}
+
   public onButtonClick(): void {
     let data: Object[] = [
       {
